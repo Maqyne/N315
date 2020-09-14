@@ -1,0 +1,21 @@
+.menu {
+  width: 100vw;
+  height: 10vh;
+  background-color: $green5;
+
+  @at-root #{&}__row {
+    font-size: 0;
+  }
+
+  @at-root #{&}__list {
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 1.2rem;
+  }
+  @at-root #{&}__link {
+    display: block;
+    text-decoration: none;
+    padding: 1.5rem;
+    color: $green1;
+  }
+}

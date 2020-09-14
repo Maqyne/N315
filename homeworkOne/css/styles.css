@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+.menu {
+  width: 100vw;
+  height: 10vh;
+  background-color: #243119;
+}
+.menu__row {
+  font-size: 0;
+}
+
+.menu__list {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 1.2rem;
+}
+
+.menu__link {
+  display: block;
+  text-decoration: none;
+  padding: 1.5rem;
+  color: #c9f2c7;
+}
+
+.content__main {
+  display: block;
+  margin: auto;
+}

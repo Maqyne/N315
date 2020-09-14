@@ -1,0 +1,6 @@
+.content {
+  @at-root #{&}__main {
+    display: block;
+    margin: auto;
+  }
+}
