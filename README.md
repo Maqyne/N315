@@ -2,7 +2,6 @@
 
 ##Below are assignment links:
 
-[HomeworkOne:](https://in-info-web4.informatics.iupui.edu/~kylperry/n315/homeworkOne/)
+[Homework One](https://in-info-web4.informatics.iupui.edu/~kylperry/n315/homeworkOne/)
 
-###Homework 2:
-https://in-info-web4.informatics.iupui.edu/~kylperry/n315/homeworkTwo/
+[Homework Two](https://in-info-web4.informatics.iupui.edu/~kylperry/n315/homeworkTwo/)
