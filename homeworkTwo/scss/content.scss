@@ -1,0 +1,15 @@
+.content {
+  display: flex;
+  flex-direction: column;
+
+  h1,
+  img,
+  p {
+    margin: 0 auto;
+    margin-top: 25px;
+  }
+
+  p {
+    width: 50%;
+  }
+}

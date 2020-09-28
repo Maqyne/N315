@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+nav {
+  height: 50px;
+  background-color: black;
+  display: flex;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  margin: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.content h1,
+.content img,
+.content p {
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.content p {
+  width: 50%;
+}
