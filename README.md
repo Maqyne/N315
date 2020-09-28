@@ -1,6 +1,6 @@
 # N315
 
-##Below are assignment links:
+Below are assignment links:
 
 [Homework One](https://in-info-web4.informatics.iupui.edu/~kylperry/n315/homeworkOne/)
 
