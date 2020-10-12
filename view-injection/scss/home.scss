@@ -2,4 +2,15 @@
   width: 75%;
   padding-top: 50px;
   margin: auto;
+  .hero {
+    background-image: url($hero_full);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }

@@ -20,8 +20,12 @@ p {
 }
 
 nav {
+  position: absolute;
+  z-index: 99;
   height: 50px;
-  background-color: black;
+  width: 100%;
+  background-color: #111111;
+  opacity: 0.9;
   display: flex;
 }
 nav .links {
@@ -30,6 +34,9 @@ nav .links {
   flex-direction: row;
   justify-content: space-around;
   margin: auto;
+}
+nav .links #home {
+  background-image: image();
 }
 nav .links a {
   text-decoration: none;
@@ -41,7 +48,8 @@ footer {
   position: fixed;
   bottom: 0;
   height: 25px;
-  background-color: black;
+  background-color: #111111;
+  opacity: 0.9;
   display: flex;
 }
 footer p {
@@ -53,4 +61,15 @@ footer p {
   width: 75%;
   padding-top: 50px;
   margin: auto;
+}
+#app .hero {
+  background-image: url("https://www.riotgames.com/darkroom/2000/2f1f0f405e785fe9ab7257472c3a6417:2362f4db0376b36a246c6a7fae0d14ff/01-header.jpg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
