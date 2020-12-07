@@ -1,0 +1,137 @@
+#app {
+  width: 75%;
+  padding-top: 50px;
+  margin: auto;
+  .jobs {
+    height: 80%;
+    background-image: url($jobs_hero);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h1,
+    a {
+      position: relative;
+      top: 40vh;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      flex-direction: column;
+
+      padding-bottom: 40px;
+      text-transform: capitalize;
+      color: white;
+    }
+    .jobs_header {
+      font-size: 5rem;
+      line-height: 1.1;
+    }
+    .jobs_link {
+      border: 0;
+
+      cursor: pointer;
+
+      text-align: center;
+      text-decoration: none;
+      padding: 10px 30px;
+      border-radius: 32px;
+      color: #e7e6e3;
+      font-size: 1em;
+      line-height: 20px;
+      min-width: 160px;
+
+      letter-spacing: 0.025em;
+      background-color: #d1363a;
+      background-image: linear-gradient(-183deg, #d1363a 49.5%, #2b2a29 50.5%);
+      background-size: 100% 255%;
+      background-position: 50% 0;
+      background-repeat: no-repeat;
+      font-family: "Eco Coding W02 WGL4", monospace;
+    }
+    section {
+      height: 100%;
+      position: relative;
+      top: 75%;
+      background-color: white;
+    }
+    h2 {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+      width: 100%;
+      max-width: 953.333px;
+      margin-top: 25px;
+      text-align: center;
+      font-size: 2rem;
+      line-height: 1.357;
+      font-family: ClassicGrotesqueW02, Arial, sans-serif;
+      color: #2b2a29;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    .job_row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-left: auto;
+      margin-right: auto;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      max-width: 1440px;
+
+      height: 75%;
+
+      #life {
+        background-image: url($job_life);
+      }
+      #interview {
+        background-image: url($job_interview);
+      }
+      #offices {
+        background-image: url($job_offices);
+      }
+      #social {
+        background-image: url($job_social);
+      }
+      .job_col {
+        height: 100%;
+        width: 23%;
+
+        box-shadow: 0 4px 8px 0 rbga (0, 0, 0, 0.2);
+
+        .spacer {
+          height: 75%;
+        }
+        .job_card {
+          padding: 20px;
+          height: 25%;
+          background-color: #d1363a;
+          color: white;
+          text-transform: capitalize;
+          letter-spacing: 0.075em;
+          h4 {
+            font-size: 1.25rem;
+            line-height: 1.4;
+            font-family: "Proxima Nova W02", Arial, sans-serif;
+          }
+          p {
+            margin-top: 10px;
+            font-size: 1em;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+  }
+}

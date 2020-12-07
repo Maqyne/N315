@@ -1,0 +1,504 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  height: 50px;
+  width: 100%;
+  background-color: #111111;
+  opacity: 0.9;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+nav .logo a img {
+  height: 30px;
+}
+nav .links {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .links a {
+  text-decoration: none;
+  color: white;
+  margin: auto;
+}
+nav .navicon {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  cursor: pointer;
+}
+
+@media all and (max-width: 799px) {
+  nav {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  nav .links {
+    display: none;
+  }
+  nav .navicon {
+    display: block;
+  }
+}
+.navMobileView {
+  width: 100%;
+  height: 50%;
+}
+
+.linksMobileView {
+  display: flex;
+  width: 50%;
+  height: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.linksMobileView a {
+  text-decoration: none;
+  color: white;
+  margin: auto;
+}
+
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 25px;
+  background-color: #111111;
+  opacity: 0.9;
+  display: flex;
+}
+footer p {
+  margin: auto;
+  color: white;
+}
+
+#app {
+  width: 75%;
+  padding-top: 50px;
+  margin: auto;
+}
+#app .hero {
+  background-image: url("https://www.riotgames.com/darkroom/2000/2f1f0f405e785fe9ab7257472c3a6417:2362f4db0376b36a246c6a7fae0d14ff/01-header.jpg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#app .hero h1,
+#app .hero a {
+  position: relative;
+  top: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 40px;
+  text-transform: capitalize;
+  color: white;
+}
+#app .hero .hero_header {
+  font-size: 5rem;
+  line-height: 1.1;
+}
+#app .hero .hero_link {
+  border: 0;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 32px;
+  color: #e7e6e3;
+  font-size: 1em;
+  line-height: 20px;
+  min-width: 160px;
+  letter-spacing: 0.025em;
+  background-color: #d1363a;
+  background-image: linear-gradient(-183deg, #d1363a 49.5%, #2b2a29 50.5%);
+  background-size: 100% 255%;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  font-family: "Eco Coding W02 WGL4", monospace;
+}
+
+#app {
+  width: 75%;
+  padding-top: 50px;
+  margin: auto;
+}
+#app .about {
+  background-image: url("https://www.riotgames.com/assets/img/structure/6819de603d160dca6a4b7d51a3cdaa8b/hero--dark-sketch.jpg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#app .about .about_hero_wrapper {
+  display: flex;
+  flex-direction: row;
+}
+#app .about .about_hero_wrapper img {
+  margin-left: 5vw;
+  margin-top: 15vh;
+  height: 50%;
+}
+#app .about .about_hero_wrapper .about_content {
+  flex-direction: column;
+  margin-top: 15vh;
+  margin-left: 5vh;
+}
+#app .about .about_hero_wrapper .about_content p {
+  font-family: ClassicGrotesqueW02, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 0.625rem;
+  line-height: 1.6;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  position: relative;
+  color: #e7e6e3;
+  display: inline-block;
+  padding: 3px 10px 2px;
+  color: #e7e6e3;
+  background: #d1363a;
+  text-shadow: none;
+}
+#app .about .about_hero_wrapper .about_content h1 {
+  position: relative;
+  font-weight: 900;
+  letter-spacing: 0.005em;
+  font-size: 6rem;
+  color: white;
+  text-transform: capitalize;
+  font-family: "Proxima Nova W02", Arial, sans-serif;
+}
+#app .about .story_wrapper {
+  height: 90%;
+  flex-direction: column;
+  margin-top: 100px;
+  background-color: white;
+  text-decoration: none;
+  padding: 10px 30px;
+  color: black;
+  line-height: 20px;
+  min-width: 160px;
+}
+#app .about .story_title {
+  text-align: center;
+  padding-top: 50px;
+  text-transform: capitalize;
+  font-size: 4rem;
+}
+#app .about .story_content {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-top: 50px;
+  max-width: 953.333px;
+  font-size: 1.375rem;
+  line-height: 1.636;
+}
+
+#app {
+  width: 75%;
+  padding-top: 50px;
+  margin: auto;
+}
+#app .jobs {
+  height: 80%;
+  background-image: url("https://www.riotgames.com/darkroom/2000/16d55d98ac51853fe5b82c1a3020691e:9e18b0849b55f61e0eadde774282a267/static-frame.jpg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#app .jobs h1,
+#app .jobs a {
+  position: relative;
+  top: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 40px;
+  text-transform: capitalize;
+  color: white;
+}
+#app .jobs .jobs_header {
+  font-size: 5rem;
+  line-height: 1.1;
+}
+#app .jobs .jobs_link {
+  border: 0;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 32px;
+  color: #e7e6e3;
+  font-size: 1em;
+  line-height: 20px;
+  min-width: 160px;
+  letter-spacing: 0.025em;
+  background-color: #d1363a;
+  background-image: linear-gradient(-183deg, #d1363a 49.5%, #2b2a29 50.5%);
+  background-size: 100% 255%;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  font-family: "Eco Coding W02 WGL4", monospace;
+}
+#app .jobs section {
+  height: 100%;
+  position: relative;
+  top: 75%;
+  background-color: white;
+}
+#app .jobs h2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 100%;
+  max-width: 953.333px;
+  margin-top: 25px;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.357;
+  font-family: ClassicGrotesqueW02, Arial, sans-serif;
+  color: #2b2a29;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+#app .jobs .job_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 1440px;
+  height: 75%;
+}
+#app .jobs .job_row #life {
+  background-image: url("https://www.riotgames.com/darkroom/350/0740aae390e4921c3bf139946b0cf73f:835100d7a478a4a932e401d23b50e947/life-at-riot.png");
+}
+#app .jobs .job_row #interview {
+  background-image: url("https://www.riotgames.com/darkroom/350/6ca2db242b9d6b422dd64351db404be2:cae7f85e0eb20d20e959720f57ddbda2/cyw-riotcampus-062.jpg");
+}
+#app .jobs .job_row #offices {
+  background-image: url("https://www.riotgames.com/darkroom/350/79a6032b373861374d8be81d8b751b1d:0dbe5c12421afbab5a2f18294aae4c43/cyw-riotcampus-140.jpg");
+}
+#app .jobs .job_row #social {
+  background-image: url("https://www.riotgames.com/darkroom/350/d1119a419f1329bb50548075408e0842:9993362c48225c09c8137153e5212e67/social-impact.jpg");
+}
+#app .jobs .job_row .job_col {
+  height: 100%;
+  width: 23%;
+  box-shadow: 0 4px 8px 0 rbga 0, 0, 0, 0.2;
+}
+#app .jobs .job_row .job_col .spacer {
+  height: 75%;
+}
+#app .jobs .job_row .job_col .job_card {
+  padding: 20px;
+  height: 25%;
+  background-color: #d1363a;
+  color: white;
+  text-transform: capitalize;
+  letter-spacing: 0.075em;
+}
+#app .jobs .job_row .job_col .job_card h4 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-family: "Proxima Nova W02", Arial, sans-serif;
+}
+#app .jobs .job_row .job_col .job_card p {
+  margin-top: 10px;
+  font-size: 1em;
+  line-height: 22px;
+}
+
+#app {
+  width: 75%;
+  padding-top: 50px;
+  margin: auto;
+}
+#app .about {
+  background-image: url("https://www.riotgames.com/assets/img/structure/6819de603d160dca6a4b7d51a3cdaa8b/hero--dark-sketch.jpg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#app .about .about_hero_wrapper {
+  display: flex;
+  flex-direction: row;
+}
+#app .about .about_hero_wrapper img {
+  margin-left: 5vw;
+  margin-top: 15vh;
+  height: 50%;
+}
+#app .about .about_hero_wrapper .about_content {
+  flex-direction: column;
+  margin-top: 15vh;
+  margin-left: 5vh;
+}
+#app .about .about_hero_wrapper .about_content p {
+  font-family: ClassicGrotesqueW02, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 0.625rem;
+  line-height: 1.6;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  position: relative;
+  color: #e7e6e3;
+  display: inline-block;
+  padding: 3px 10px 2px;
+  color: #e7e6e3;
+  background: #d1363a;
+  text-shadow: none;
+}
+#app .about .about_hero_wrapper .about_content h1 {
+  position: relative;
+  font-weight: 900;
+  letter-spacing: 0.005em;
+  font-size: 6rem;
+  color: white;
+  text-transform: capitalize;
+  font-family: "Proxima Nova W02", Arial, sans-serif;
+}
+#app .about .story_wrapper {
+  height: 110%;
+  flex-direction: column;
+  margin-top: 100px;
+  background-color: white;
+  text-decoration: none;
+  padding: 10px 30px;
+  color: black;
+  line-height: 20px;
+  min-width: 160px;
+}
+#app .about .story_title {
+  text-align: center;
+  padding-top: 50px;
+  text-transform: capitalize;
+  font-size: 3rem;
+}
+#app .about .story_content {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-top: 50px;
+  max-width: 953.333px;
+  font-size: 1.375rem;
+  line-height: 1.636;
+}
+#app {
+  width: 75%;
+  padding-top: 50px;
+  margin: auto;
+}
+#app .news_wrapper {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#app .news_wrapper h1,
+#app .news_wrapper p {
+  position: relative;
+  top: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 40px;
+  color: white;
+}
+#app .news_wrapper .overlay {
+  background-image: url("https://www.riotgames.com/darkroom/1000/9deef6ca12f8c5eda5df5bd94bbbf7a3:82fedd8f9dd9b96928e288f49aa9183b/00-banner-t2-client-image-9py3o8n8i6w2znjbu3zb.jpg");
+  mix-blend-mode: lighten;
+  opacity: 0.5;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#app .news_wrapper .news_content {
+  margin-left: 50px;
+  font-family: sans-serif;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+#app .news_wrapper .news_content .news_header {
+  font-size: 3rem;
+  line-height: 1.1;
+}
+#app .news_wrapper .news_content p {
+  font-size: 1.25rem;
+}

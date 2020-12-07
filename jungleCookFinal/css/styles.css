@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    width: 1280px;
+    margin: 0 auto;
+  }
+}
+.topNav {
+  width: 100vw;
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+.topNav .logo {
+  width: 169px;
+  height: 55px;
+  background-image: url(../media/logoFixed.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.topNav .menuSVG {
+  display: none;
+}
+.topNav .links {
+  margin-right: 100px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topNav .links a {
+  text-decoration: none;
+  font-family: Caveat-Regular, Caveat;
+  font-size: 25px;
+  text-transform: capitalize;
+  color: #000000;
+  background-color: none;
+  padding: 10px 25px;
+  border-radius: 25px;
+}
+.topNav .links a:hover {
+  background-color: #c7eae4;
+  padding: 10px 25px;
+  border-radius: 25px;
+}
+.topNav .links #login {
+  background-color: #ffd972;
+  padding: 10px 52px;
+  border-radius: 25px;
+}
+.topNav .links #login:hover {
+  background-color: #393939;
+  padding: 10px 52px;
+  border-radius: 25px;
+  color: #ffd972;
+}
+.topNav .links #logout {
+  display: none;
+  background-color: #ffd972;
+  padding: 10px 52px;
+  border-radius: 25px;
+}
+.topNav .links #logout:hover {
+  background-color: #393939;
+  padding: 10px 52px;
+  border-radius: 25px;
+  color: #ffd972;
+}
+.topNav .links #yourRecipe {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .topNav {
+    width: 1280px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .topNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .topNav .menuSVG {
+    display: flex;
+    width: 55px;
+    height: 55px;
+    background-image: url(../media/menu.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 100px;
+  }
+  .topNav .links {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  .topNav {
+    width: 375px;
+  }
+}
+.home {
+  height: 100vh;
+  max-width: 100vw;
+  background-image: linear-gradient(to right, rgba(242, 92, 84, 0.6), rgba(242, 92, 84, 0.6)), url(../media/hero.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  font-family: GillSans;
+}
+.home .callout {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.home .callout .smallCircle {
+  margin-left: 25vw;
+  margin-top: -40vh;
+  background-color: #fcbcb8;
+  width: 167px;
+  border-radius: 50%;
+  padding: 30px;
+  height: 170px;
+  position: fixed;
+  z-index: 1;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0px 10px 6px #00000029;
+  font-family: Caveat;
+  font-size: 12px;
+}
+.home .callout .bigCircle {
+  background-color: #ffd972;
+  width: 357px;
+  height: 357px;
+  position: fixed;
+  z-index: 2;
+  border-radius: 50%;
+  box-shadow: 0px 10px 6px #00000029;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.home .callout .bigCircle .header {
+  width: 100%;
+  font-family: Caveat;
+  font-style: bold;
+  font-size: 30px;
+}
+.home .callout .bigCircle .subHeader {
+  padding-top: -50px;
+  width: 50%;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    background-color: rgba(242, 92, 84, 0.9);
+  }
+
+  .home {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home .callout .smallCircle {
+    margin-left: 45vw;
+    margin-top: -30vh;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .home .callout .smallCircle {
+    width: 121px;
+    height: 121px;
+    font-size: 8px;
+    margin-left: 50vw;
+    margin-top: -30vh;
+  }
+  .home .callout .bigCircle {
+    width: 257px;
+    height: 257px;
+  }
+  .home .callout .bigCircle .header {
+    width: 100%;
+    height: 100%;
+    margin-top: 75px;
+    font-size: 17px;
+  }
+  .home .callout .bigCircle .subHeader {
+    width: 50%;
+    height: 100%;
+    font-size: 9px;
+    margin-top: -75px;
+  }
+}
+#footer {
+  width: 100vw;
+  height: 20px;
+  position: absolute;
+  bottom: 2.5vh;
+  z-index: 98;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: #393939;
+  font-family: GillSans;
+  font-style: italic;
+}
+#footer .botNav {
+  width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#footer .botNav a {
+  text-decoration: none;
+  color: #000000;
+  text-align: left;
+}
+#footer .socialMedia {
+  display: flex;
+  justify-content: space-around;
+}
+#footer .socialMedia img {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 1280px) {
+  #footer {
+    width: 1280px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #footer {
+    width: 98vw;
+    bottom: 5vh;
+    flex-direction: column;
+  }
+  #footer .copyright {
+    margin-bottom: 5px;
+  }
+  #footer .botNav {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  #footer .socialMedia {
+    width: 10vw;
+    justify-content: space-between;
+  }
+  #footer .socialMedia img {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  #footer {
+    width: 375px;
+    flex-direction: column;
+    font-size: 9px;
+  }
+  #footer .copyright {
+    margin-bottom: 5px;
+  }
+  #footer .botNav {
+    width: 80%;
+    margin-bottom: 5px;
+  }
+  #footer .socialMedia {
+    width: 15%;
+    justify-content: space-between;
+  }
+  #footer .socialMedia img {
+    margin-left: 0;
+  }
+}

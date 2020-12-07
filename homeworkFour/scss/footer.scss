@@ -1,0 +1,13 @@
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: 25px;
+  background-color: #111111;
+  opacity: 0.9;
+  display: flex;
+  p {
+    margin: auto;
+    color: white;
+  }
+}

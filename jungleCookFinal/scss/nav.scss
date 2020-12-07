@@ -1,0 +1,107 @@
+.topNav {
+  width: 100vw;
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 50px;
+
+  .logo {
+    width: 169px;
+    height: 55px;
+    background-image: url(../media/logoFixed.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .menuSVG {
+    display: none;
+  }
+  .links {
+    margin-right: 100px;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      font-family: Caveat-Regular, Caveat;
+      font-size: 25px;
+      text-transform: capitalize;
+      color: $black;
+      background-color: none;
+      padding: 10px 25px;
+      border-radius: 25px;
+    }
+    a:hover {
+      background-color: $blue;
+      padding: 10px 25px;
+      border-radius: 25px;
+    }
+    #login {
+      background-color: $yellow;
+      padding: 10px 52px;
+      border-radius: 25px;
+    }
+    #login:hover {
+      background-color: $greyDark;
+      padding: 10px 52px;
+      border-radius: 25px;
+      color: $yellow;
+    }
+    #logout {
+      display: none;
+      background-color: $yellow;
+      padding: 10px 52px;
+      border-radius: 25px;
+    }
+    #logout:hover {
+      background-color: $greyDark;
+      padding: 10px 52px;
+      border-radius: 25px;
+      color: $yellow;
+    }
+    #yourRecipe {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: $laptop) {
+  .topNav {
+    width: $laptop;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .topNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+
+    .menuSVG {
+      display: flex;
+      width: 55px;
+      height: 55px;
+      background-image: url(../media/menu.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-right: 100px;
+    }
+    .links {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .topNav {
+    width: $mobile;
+  }
+}
