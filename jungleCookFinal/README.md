@@ -18,3 +18,5 @@ I regret that with this application I wasn't able to bring to full fruition.
 Despite not being able to, I did attempt to work on the final to the best of my ability.
 
 I managed to build the home page with styling and full responsiveness. (although I didn't manage to make the drop down menu work in that time).
+
+I also built out the majority of the other pages, although without the time to make them fully responsive.
