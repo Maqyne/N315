@@ -13,4 +13,8 @@ The site must be fully responsive.
 
 The site is styled based on the provided prototype.
 
-I regret taht with this application I wasn't able to bring to full fruition. I tried to bring the home page to life despite lacking the time to fully realize the site.
+I regret that with this application I wasn't able to bring to full fruition.
+
+Despite not being able to, I did attempt to work on the final to the best of my ability.
+
+I managed to build the home page with styling and full responsiveness. (although I didn't manage to make the drop down menu work in that time).
