@@ -20,3 +20,6 @@ Despite not being able to, I did attempt to work on the final to the best of my 
 I managed to build the home page with styling and full responsiveness. (although I didn't manage to make the drop down menu work in that time).
 
 I also built out the majority of the other pages, although without the time to make them fully responsive.
+
+The site dynamically loads the pages by capturing the id of the element of the page the user clicked on to get the data and load the
+appropriate page from the view.
