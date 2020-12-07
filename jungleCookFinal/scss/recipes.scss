@@ -41,11 +41,11 @@
 
       display: flex;
 
-      .imgHolder {
+      .recipeImg {
         width: 55%;
         height: 100%;
 
-        .foodimg1 {
+        .recipeImg1 {
           height: 100%;
           width: 100%;
           background-image: url(../media/recipe-pizza.jpg);
@@ -55,7 +55,7 @@
           background-position: center;
           background-size: cover;
         }
-        .foodimg2 {
+        .recipeImg2 {
           height: 100%;
           width: 100%;
           background-image: url(../media/recipe-burger.jpg);
@@ -65,7 +65,7 @@
           background-position: center;
           background-size: cover;
         }
-        .foodimg3 {
+        .recipeImg3 {
           height: 100%;
           width: 100%;
           background-image: url(../media/recipe-pilaf.jpg);
@@ -75,7 +75,7 @@
           background-position: center;
           background-size: cover;
         }
-        .foodimg4 {
+        .recipeImg4 {
           height: 100%;
           width: 100%;
           background-image: url(../media/recipe-chowmein.jpg);
@@ -87,7 +87,7 @@
         }
       }
 
-      .textHolder {
+      .description {
         width: 45%;
         height: 100%;
         background-color: $white;
@@ -105,7 +105,7 @@
           text-decoration: underline;
         }
 
-        .desc {
+        .blurb {
           margin-bottom: 50px;
           width: 130px;
           height: 55px;
